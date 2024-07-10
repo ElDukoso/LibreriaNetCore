@@ -1,0 +1,17 @@
+@model Libreria.Models.LoginViewModel
+
+<form asp-action="Login" method="post">
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label asp-for="Contraseña"></label>
+        <input asp-for="Contraseña" type="password" />
+        <span asp-validation-for="Contraseña"></span>
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
